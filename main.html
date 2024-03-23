@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <header>My Calculator</header>
+    <section>
+        <div id="calculator-lyt">
+            <input type="text" id="result" name="result">
+            <button id="btnNumber0" value="0" onclick="onButtonClickNumber(this.value)">0</button>
+            <button id="btnNumber1" value="1" onclick="onButtonClickNumber(this.value)">1</button>
+            <button id="btnNumber2" value="2" onclick="onButtonClickNumber(this.value)">2</button>
+            <button id="btnNumberPlus" value=+ onclick="onButtonClickNumber(this.value)">+</button>
+            <button id="btnReset" onclick="resetCalculator()">reset</button>
+            <button id="btnEquals" onclick="calculation()">=</button>
+        </div>
+    </section>
+    <footer></footer>
     <script src="calc.js"></script>
 </body>
 </html>
