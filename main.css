@@ -31,3 +31,44 @@ footer{
     width: 100vw;
     height: 10vh;
 }
+
+table{
+    width: 100%;
+    height: 90%;
+    background-color: #233142;
+}
+
+th{
+    width: 25%;
+}
+
+td{
+    width: 25%;
+}
+
+#result{
+    width: 100%;
+    height: 10%;
+    border: none;
+    background-color: #233142;
+    font-size: 2em;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+#result:focus{
+    outline: none;
+}
+
+#btnCalc,#btnNumber,#btnReset{
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #455d7a;
+    border: none;
+}
+
+#btnCalc,#btnReset{
+    color: #f95959;
+}

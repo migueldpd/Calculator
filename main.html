@@ -10,13 +10,38 @@
     <header>My Calculator</header>
     <section>
         <div id="calculator-lyt">
-            <input type="text" id="result" name="result">
-            <button id="btnNumber0" value="0" onclick="onButtonClickNumber(this.value)">0</button>
-            <button id="btnNumber1" value="1" onclick="onButtonClickNumber(this.value)">1</button>
-            <button id="btnNumber2" value="2" onclick="onButtonClickNumber(this.value)">2</button>
-            <button id="btnNumberPlus" value=+ onclick="onButtonClickNumber(this.value)">+</button>
-            <button id="btnReset" onclick="resetCalculator()">reset</button>
-            <button id="btnEquals" onclick="calculation()">=</button>
+            <input type="text" id="result" name="result" readonly>
+            <table>
+                <tr>
+                    <th><button id="btnReset" onclick="resetCalculator()">C</button></th>
+                    <th><button id="btnCalc" onclick="resetCalculator()">/</button></th>
+                    <th><button id="btnCalc" onclick="resetCalculator()">x</button></th>
+                    <th><button id="btnCalc" onclick="resetCalculator()">-</button></th>   
+                </tr>
+                <tr>
+                    <td><button id="btnNumber" value="7" onclick="onButtonClickNumber(this.value)">7</button></td>
+                    <td><button id="btnNumber" value="8" onclick="onButtonClickNumber(this.value)">8</button></td>
+                    <td><button id="btnNumber" value="9" onclick="onButtonClickNumber(this.value)">9</button></td>
+                    <td rowspan="2"><button id="btnCalc" value=+ onclick="onButtonClickNumber(this.value)">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btnNumber" value="4" onclick="onButtonClickNumber(this.value)">4</button></td>
+                    <td><button id="btnNumber" value="5" onclick="onButtonClickNumber(this.value)">5</button></td>
+                    <td><button id="btnNumber" value="6" onclick="onButtonClickNumber(this.value)">6</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btnNumber" value="7" onclick="onButtonClickNumber(this.value)">1</button></td>
+                    <td><button id="btnNumber" value="8" onclick="onButtonClickNumber(this.value)">2</button></td>
+                    <td><button id="btnNumber" value="9" onclick="onButtonClickNumber(this.value)">3</button></td>
+                    <td rowspan="2"><button id="btnCalc" onclick="calculation()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="btnNumber" value="0" onclick="onButtonClickNumber(this.value)">0</button></td>
+                    <td><button id="btnCalc" value="." onclick="onButtonClickNumber(this.value)">.</button></td>
+                </tr>
+                
+            </table>
+
         </div>
     </section>
     <footer></footer>
