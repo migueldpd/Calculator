@@ -9,20 +9,24 @@
 <body>
     <header>My Calculator</header>
     <section>
+        <div class="customAlertBox" id="customAlert">
+            <h2>Please insert a number first</h2>
+            <button class="alertBoxButton" onclick="dismissAlert()">X</button>
+        </div>
         <div id="calculator-lyt">
             <input type="text" id="result" name="result" readonly>
             <table>
                 <tr>
                     <th><button id="btnReset" onclick="resetCalculator()">C</button></th>
-                    <th><button id="btnCalc" onclick="resetCalculator()">/</button></th>
-                    <th><button id="btnCalc" onclick="resetCalculator()">x</button></th>
-                    <th><button id="btnCalc" onclick="resetCalculator()">-</button></th>   
+                    <th><button id="btnCalc" value="/" onclick="onButtonClickNumber(this.value)">/</button></th>
+                    <th><button id="btnCalc" value="*" onclick="onButtonClickNumber(this.value)">x</button></th>
+                    <th><button id="btnCalc" value="-" onclick="onButtonClickNumber(this.value)">-</button></th>   
                 </tr>
                 <tr>
                     <td><button id="btnNumber" value="7" onclick="onButtonClickNumber(this.value)">7</button></td>
                     <td><button id="btnNumber" value="8" onclick="onButtonClickNumber(this.value)">8</button></td>
                     <td><button id="btnNumber" value="9" onclick="onButtonClickNumber(this.value)">9</button></td>
-                    <td rowspan="2"><button id="btnCalc" value=+ onclick="onButtonClickNumber(this.value)">+</button></td>
+                    <td rowspan="2"><button id="btnCalc" value="+" onclick="onButtonClickNumber(this.value)">+</button></td>
                 </tr>
                 <tr>
                     <td><button id="btnNumber" value="4" onclick="onButtonClickNumber(this.value)">4</button></td>
