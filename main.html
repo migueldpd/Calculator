@@ -10,7 +10,11 @@
     <header>My Calculator</header>
     <section>
         <div class="customAlertBox" id="customAlert">
-            <h2>Please insert a number first</h2>
+            <p><strong>Error!</strong> Please insert a number first</p>
+            <button class="alertBoxButton" onclick="dismissAlert()">X</button>
+        </div>
+        <div class="customAlertCalc" id="customAlertCalc">
+            <p><strong>Error!</strong> Cant calculate without any numbers</p>
             <button class="alertBoxButton" onclick="dismissAlert()">X</button>
         </div>
         <div id="calculator-lyt">
@@ -34,9 +38,9 @@
                     <td><button id="btnNumber" value="6" onclick="onButtonClickNumber(this.value)">6</button></td>
                 </tr>
                 <tr>
-                    <td><button id="btnNumber" value="7" onclick="onButtonClickNumber(this.value)">1</button></td>
-                    <td><button id="btnNumber" value="8" onclick="onButtonClickNumber(this.value)">2</button></td>
-                    <td><button id="btnNumber" value="9" onclick="onButtonClickNumber(this.value)">3</button></td>
+                    <td><button id="btnNumber" value="1" onclick="onButtonClickNumber(this.value)">1</button></td>
+                    <td><button id="btnNumber" value="2" onclick="onButtonClickNumber(this.value)">2</button></td>
+                    <td><button id="btnNumber" value="3" onclick="onButtonClickNumber(this.value)">3</button></td>
                     <td rowspan="2"><button id="btnCalc" onclick="calculation()">=</button></td>
                 </tr>
                 <tr>
