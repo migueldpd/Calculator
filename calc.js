@@ -1,14 +1,15 @@
 let currentValue = ""; //so any time a user inserts a number , the number adds instead of ghosting
 let customAlert = document.getElementById("customAlert");// customAlertBox so we can show it and deshow it
 let customWarning = document.getElementById("customAlertCalc");
+
 let calculator = document.getElementById("calculator-lyt"); // All the div containing the calculator
 let impressNumber = document.getElementById("result"); //this is the value inside the input type text
 let arrayLastDigit = []; //array from the text inside input. 
 
 
 function resetCalculator(){ //resets and cleans the input
-    if (impressNumber.value === "") {
-        alert("Nothing to delete / erase");
+    if (impressNumber.value === "") {   
+        alert("Deleting air ?");    
     } else {
         impressNumber.value= '';
         currentValue= '';
